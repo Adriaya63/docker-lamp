@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: db
--- Tiempo de generación: 16-09-2020 a las 16:37:17
--- Versión del servidor: 10.5.5-MariaDB-1:10.5.5+maria~focal
--- Versión de PHP: 7.4.9
+-- Tiempo de generación: 12-10-2022 a las 19:43:35
+-- Versión del servidor: 10.8.2-MariaDB-1:10.8.2+maria~focal
+-- Versión de PHP: 8.0.19
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,6 +20,29 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `database`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `alojamientos`
+--
+
+CREATE TABLE `alojamientos` (
+  `id` int(11) NOT NULL,
+  `ubicacion` varchar(255) NOT NULL,
+  `habitantes` int(11) NOT NULL,
+  `mCuadrados` double NOT NULL,
+  `precio` int(11) NOT NULL,
+  `imagen` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `alojamientos`
+--
+
+INSERT INTO `alojamientos` (`id`, `ubicacion`, `habitantes`, `mCuadrados`, `precio`, `imagen`) VALUES
+(12, 'C Arturo Kampion 22', 4, 110, 1100, 'polla.jpg'),
+(33, 'Tu puta casa', 1, 12, 10, 'una.png');
 
 -- --------------------------------------------------------
 
@@ -43,6 +66,12 @@ INSERT INTO `usuarios` (`id`, `nombre`) VALUES
 --
 -- Índices para tablas volcadas
 --
+
+--
+-- Indices de la tabla `alojamientos`
+--
+ALTER TABLE `alojamientos`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indices de la tabla `usuarios`
