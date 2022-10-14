@@ -6,19 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Servicio Web</title>
   <link rel="stylesheet" type="text/css" href="css/headerSets.css">
+  <link rel="stylesheet" type="text/css" href="css/prodStyle.css">
 </head>
 <?php include("templates/header.php")?>
 
 <br>
-        <div class="tituloproductos"><h1> TODOS LOS PRODUCTOS</h1></div>
+        <div class="tituloproductos"><h1> LISTADO DE ALOJAMIENTOS</h1></div>
 		<div class="todosproductos" id="todosproductos">
 			
 			<br>
-            <div class="descripciontodosproductos"><h2 class="descripciontodosproductos2">Para alquilar un vehiculo, contacte con nosotros con el numero de referencia del vehiculo que ha elegido y le contestaremos con la disponibilidad del mismo en la mayor brevedad posible.
+            <div class="descripciontodosproductos"><h2 class="descripciontodosproductos2">Si esta interesado en alguno de los alojamientos, mandenos un correo con el codigo identificativo del mismo y las fechas de interes y le mandaremos la información con la mayor brevedad posible.
             </h2></div>
             <br>
 			<ul>
-                <li> <h1 class="titulotipos"> AUTOCARAVANAS</h1>
+                <li>
                     <table class="tablaautocaravanas">
                     <tr>
                         <th> Codigo</th>
@@ -49,11 +50,11 @@
 
                     <tr>
                         <td> <?php echo $mostrar['id'] ?></td>
-                        <td> <?php echo $mostrar['ubicacion'] ?><</td>
-                        <td> <?php echo $mostrar['habitantes'] ?><</td>
-                        <td> <?php echo $mostrar['mCuadrados'] ?><</td>
-                        <td> <?php echo $mostrar['precio'] ?><</td>
-                        <td> <?php echo $mostrar['imagen'] ?><</td>
+                        <td> <?php echo $mostrar['ubicacion'] ?></td>
+                        <td> <?php echo $mostrar['habitantes'] ?></td>
+                        <td> <?php echo $mostrar['mCuadrados'] ?></td>
+                        <td> <?php echo $mostrar['precio'] ?></td>
+                        <td> <img src="./img/<?php echo $mostrar['imagen'] ?>" alt="imagen casa"></td>
                     </tr>
     <?php } ?>
 

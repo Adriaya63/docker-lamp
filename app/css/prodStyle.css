@@ -1,0 +1,84 @@
+ .tituloproductos{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 2.5vw;
+}
+.descripciontodosproductos{
+    margin-top: 10px;
+    text-align: center;
+    align-items: center; 
+}
+.descripciontodosproductos2{
+   
+    margin-top: 10px;
+    text-align: center;
+    font-size: 2.15vw;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    
+}
+
+
+
+
+.titulotipos{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    font-size: 3vw;
+}
+.tablaautocaravanas{
+    margin: auto;
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tablaautocaravanas th{
+    border: 1px solid #dddddd;
+    background-color: #7c7979;
+    text-align: center;
+    font-size: 2vw;
+    padding: 8px
+  }
+.tablaautocaravanas td{
+    border: 1px solid #dddddd;
+    text-align: center;
+    font-size: 1.25vw;
+    padding: 8px;
+  }
+
+  .tablaautocaravanas img{
+    width: 300px;
+    height: 300px;
+  }
+   .tablaautocaravanas tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  .linkcaravana{
+    text-decoration:none;
+    font-size: 1.5vw;
+    color: black;
+    }
+
+
+
+
+
+
+
+footer{
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    height: 50px;   
+    line-height: 50px;
+    bottom: 0%;
+}
