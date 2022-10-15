@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: db
--- Tiempo de generación: 12-10-2022 a las 19:43:35
+-- Tiempo de generación: 15-10-2022 a las 16:13:57
 -- Versión del servidor: 10.8.2-MariaDB-1:10.8.2+maria~focal
 -- Versión de PHP: 8.0.19
 
@@ -31,7 +31,7 @@ CREATE TABLE `alojamientos` (
   `id` int(11) NOT NULL,
   `ubicacion` varchar(255) NOT NULL,
   `habitantes` int(11) NOT NULL,
-  `mCuadrados` double NOT NULL,
+  `mCuadrados` int(11) NOT NULL,
   `precio` int(11) NOT NULL,
   `imagen` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -41,8 +41,7 @@ CREATE TABLE `alojamientos` (
 --
 
 INSERT INTO `alojamientos` (`id`, `ubicacion`, `habitantes`, `mCuadrados`, `precio`, `imagen`) VALUES
-(12, 'C Arturo Kampion 22', 4, 110, 1100, 'polla.jpg'),
-(33, 'Tu puta casa', 1, 12, 10, 'una.png');
+(1, 'Tu puta casa', 1, 12, 10, 'casaCR7.jpg');
 
 -- --------------------------------------------------------
 
@@ -51,17 +50,21 @@ INSERT INTO `alojamientos` (`id`, `ubicacion`, `habitantes`, `mCuadrados`, `prec
 --
 
 CREATE TABLE `usuarios` (
-  `id` int(11) NOT NULL,
-  `nombre` text NOT NULL
+  `nombre` varchar(255) NOT NULL,
+  `apellido` varchar(255) NOT NULL,
+  `fechancto` date NOT NULL,
+  `tlf` int(11) NOT NULL,
+  `dni` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `contrasena` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`id`, `nombre`) VALUES
-(1, 'mikel'),
-(2, 'aitor');
+INSERT INTO `usuarios` (`nombre`, `apellido`, `fechancto`, `tlf`, `dni`, `email`, `contrasena`) VALUES
+('Adrian', 'Ayabarrena', '2002-07-23', 610657060, '71482195N', 'adriaya63@gmail.com', 'adrianayaba');
 
 --
 -- Índices para tablas volcadas
@@ -74,10 +77,14 @@ ALTER TABLE `alojamientos`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `usuarios`
+-- AUTO_INCREMENT de las tablas volcadas
 --
-ALTER TABLE `usuarios`
-  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT de la tabla `alojamientos`
+--
+ALTER TABLE `alojamientos`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -6,7 +6,7 @@ function comprobarReg(){
 
 
 
-    var fechancto = document.getElementById("fechancto").value.split("/"); 
+    var fechancto = document.getElementById("fechancto").value.split("-"); 
     var fechavalida = new Date(parseInt(fechancto[0]),parseInt(fechancto[1]),parseInt(fechancto[2]));
     var hoy = new Date();
     
@@ -54,7 +54,7 @@ function comprobarReg(){
     
 
     else if (isNaN(fechavalida)){
-        alert("Fecha introducida incorrecta\nTiene que tener la siguiente forma: aaaa/mm/dd");
+        alert("Fecha introducida incorrecta\nTiene que tener la siguiente forma: aaaa-mm-dd");
         return false;
     }
     else if(mesncto<1||mesncto>12||diancto<1||diancto>31){
@@ -89,7 +89,7 @@ function comprobarReg(){
         alert("Correo introducido incorrecto");
         return false;
     }
-    else if(!contrasena.test(document.getElementById("contasena").value)){
+    else if(!contrasena.test(document.getElementById("contrasena").value)){
         alert("La contraseña debe tener al menos 8 caracteres"); 
         return false;
     }

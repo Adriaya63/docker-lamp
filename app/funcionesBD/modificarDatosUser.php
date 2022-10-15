@@ -1,4 +1,5 @@
 <?php
+	session_start();
             	$hostname = "db";
 		$username = "admin";
 		$password = "test";
@@ -8,20 +9,17 @@
 		if ($conn->connect_error) {
 			die("Database connection failed: " . $conn->connect_error);
 		}
-
-        
 		
 		$nombre=$_POST['nombre'];
 		$apellido=$_POST['apellido'];
 		$fechancto=$_POST['fechancto'];
 		$tlf=$_POST['telefono'];
 		$dni=$_POST['dni'];
-		$email=$_POST['email'];
-		$contrasena=$_POST['contrasena'];
+		$correo=$_SESSION['email'];
+		$contraseña=$_POST['contrasena'];
 		
-		
-		mysqli_query($conn, "INSERT INTO `usuarios` (nombre,apellido,fechancto,tlf,dni,email,contrasena) VALUES ('$nombre', '$apellido', '$fechancto', '$tlf', '$dni', '$email', '$contrasena')")
+		mysqli_query($conn, "UPDATE `usuarios` SET nombre='$nombre', apellido='$apellido', fechancto='$fechancto', tlf='$tlf', dni='$dni', contrasena='$contraseña' WHERE email='$correo'")
    		or die (mysqli_error($conn));
    		
-   		echo '<script>alert("Se han registrado los datos correctamente"); window.location.href="index.php"</script>';
+   		echo '<script>alert("Se han actualizado los datos correctamente"); window.location.href="tusDatos.php"</script>';
 ?>

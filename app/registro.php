@@ -7,7 +7,7 @@
   <title>Servicio Web</title>
   <link rel="stylesheet" type="text/css" href="css/headerSets.css">
   <link rel="stylesheet" type="text/css" href="css/regStyle.css">
-  <script type="text/javascript" src="comprobarReg.js"></script>
+  <script type="text/javascript" src="js/comprobarReg.js"></script>
 </head>
 <?php include("templates/header.php")?>
     <form class="form-register" onsubmit=" return comprobarReg()" action="reg.php" method="POST">
