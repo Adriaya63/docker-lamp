@@ -10,7 +10,7 @@
   <script type="text/javascript" src="js/comprobarReg.js"></script>
 </head>
 <?php include("templates/header.php")?>
-    <form class="form-register" onsubmit=" return comprobarReg()" action="reg.php" method="POST">
+    <form class="form-register" onsubmit=" return comprobarReg()" action="funcionesBD/reg.php" method="POST">
         <h4>Formulario de Registro</h4>
         <input class="control" type="text" name="nombre" id="nombre" placeholder="Nombre">
         <input class="control" type="text" name="apellido" id="apellido" placeholder="Primer apellido">

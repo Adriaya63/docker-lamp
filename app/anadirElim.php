@@ -16,7 +16,7 @@
             <div class="contenedor1">
             <h4 class="titulocont">Añadir Alojamiento</h4>
             <p>Escriba los datos en sus respectivos campos y pulse el boton "Añadir"</p>
-                <form class="form-register" onsubmit="" action="anadir.php" method="POST">
+                <form class="form-register" onsubmit="" action="funcionesBD/anadir.php" method="POST">
                     <input class="control" type="text" name="ubicacion" id="ubicacion" placeholder="Ubicacion">
                     <input class="control" type="int " name="habitantes" id="habitantes" placeholder="Habitantes">
                     <input class="control" type="int" name="mCuad" id="mCuad" placeholder="Metros cuadrados">
@@ -29,7 +29,7 @@
             <div class="contenedor2">
             <h4 class="titulocont">Eliminar Alojamiento</h4>
             <p>Introduzca el codigo del alojamiento y pulse "Eliminar"</p>
-                <form class="form-register" onsubmit="return confirmacion()" action="eliminar.php" method="POST">
+                <form class="form-register" onsubmit="return confirmacion()" action="funcionesBD/eliminar.php" method="POST">
                     <input class="control" type="int" name="codigo" id="codigo" placeholder="Codigo">
                     <input class="boton" type="submit" value="Eliminar">
                 </form>

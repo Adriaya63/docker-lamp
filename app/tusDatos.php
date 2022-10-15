@@ -14,7 +14,7 @@
 
 
 
-<form id="formularioregistro" class="formularioregistro" onsubmit=" return comprobarReg()" action="modificarDatosUser.php" method="POST">
+<form id="formularioregistro" class="formularioregistro" onsubmit=" return comprobarReg()" action="funcionesBD/modificarDatosUser.php" method="POST">
             <div class="tituloregistro"> <h1>Tus Datos</h1> </div>
 
             <table class="tabladatos">
