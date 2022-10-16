@@ -19,10 +19,10 @@
 		
 		$filas=mysqli_num_rows($resultado);
 		if ($filas>0) {
-		  header("location:tusDatos.php");
+		  header("location:../tusDatos.php");
 		}
 		else {
-		  echo '<script>alert("Contraseña incorrecta"); window.location.href="login.php"</script>';;
+		  echo '<script>alert("Contraseña incorrecta"); window.location.href="../login.php"</script>';;
 		}
 		mysqli_free_result($resultado);
 ?>

@@ -15,7 +15,6 @@
 		<div class="todosproductos" id="todosproductos">
 			
 			<br>
-            <div class="descripciontodosproductos"><h2 class="descripciontodosproductos2">Si esta interesado en alguno de los alojamientos, mandenos un correo con el codigo identificativo del mismo y las fechas de interes y le mandaremos la información con la mayor brevedad posible.
             </h2></div>
             <br>
 			<ul>
@@ -49,12 +48,12 @@
 ?>
 
                     <tr>
-                        <td> <?php echo $mostrar['id'] ?></td>
-                        <td> <?php echo $mostrar['ubicacion'] ?></td>
-                        <td> <?php echo $mostrar['habitantes'] ?></td>
-                        <td> <?php echo $mostrar['mCuadrados'] ?></td>
-                        <td> <?php echo $mostrar['precio'] ?></td>
-                        <td> <img src="./img/<?php echo $mostrar['imagen'] ?>" alt="imagen casa"></td>
+                            <td name="id" id="id"> <?php echo $mostrar['id'] ?></td>
+                            <td> <?php echo $mostrar['ubicacion'] ?></td>
+                            <td> <?php echo $mostrar['habitantes'] ?></td>
+                            <td> <?php echo $mostrar['mCuadrados'] ?></td>
+                            <td> <?php echo $mostrar['precio'] ?></td>
+                            <td> <img src="./img/<?php echo $mostrar['imagen'] ?>" alt="imagen casa"></td>
                     </tr>
     <?php } ?>
 

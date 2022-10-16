@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: db
--- Tiempo de generación: 15-10-2022 a las 16:13:57
+-- Tiempo de generación: 16-10-2022 a las 16:05:26
 -- Versión del servidor: 10.8.2-MariaDB-1:10.8.2+maria~focal
 -- Versión de PHP: 8.0.19
 
@@ -41,7 +41,9 @@ CREATE TABLE `alojamientos` (
 --
 
 INSERT INTO `alojamientos` (`id`, `ubicacion`, `habitantes`, `mCuadrados`, `precio`, `imagen`) VALUES
-(1, 'Tu puta casa', 1, 12, 10, 'casaCR7.jpg');
+(1, 'Casa 1', 1, 12, 10, 'casaCR7.jpg'),
+(4, 'La casa', 8, 1234, 23456, 'Pineapple.webp'),
+(6, 'Casa 1', 2, 1234, 23456, 'casaCR7.jpg');
 
 -- --------------------------------------------------------
 
@@ -58,13 +60,6 @@ CREATE TABLE `usuarios` (
   `email` varchar(255) NOT NULL,
   `contrasena` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Volcado de datos para la tabla `usuarios`
---
-
-INSERT INTO `usuarios` (`nombre`, `apellido`, `fechancto`, `tlf`, `dni`, `email`, `contrasena`) VALUES
-('Adrian', 'Ayabarrena', '2002-07-23', 610657060, '71482195N', 'adriaya63@gmail.com', 'adrianayaba');
 
 --
 -- Índices para tablas volcadas
@@ -84,7 +79,7 @@ ALTER TABLE `alojamientos`
 -- AUTO_INCREMENT de la tabla `alojamientos`
 --
 ALTER TABLE `alojamientos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

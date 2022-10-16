@@ -6,13 +6,13 @@ a{
     text-decoration: none;
 }
 body{
-    background-color:#f1efeef6;
+    background-color:#f88b55f6;
     font-family: Arial, Helvetica, sans-serif;
     ;
 }
 
 header{
-    background-color: #18161649;
+    background-color: #c8d4cb94;
     height: 20vh;
     width: 100%;
     margin:0%;
@@ -87,7 +87,7 @@ header{
 }
 
 .objmenu a:hover:not(.active) {
-    background-color:#dc5b238f ;
+    background-color:#34ca348f ;
 }
 
 .objmenu a.active {

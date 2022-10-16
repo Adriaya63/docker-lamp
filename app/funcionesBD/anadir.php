@@ -17,12 +17,12 @@
     $imagen = $_POST['imagen'];
 
     if($ubi==null or $hab==null or $mCuad==null or $precio==null or $imagen==null){
-        echo '<script>alert("Error: rellena todos los campos");window.location.href="anadirElim.php"</script>';
+        echo '<script>alert("Error: rellena todos los campos");window.location.href="../anadirElim.php"</script>';
     }
 
     mysqli_query($conn, "INSERT INTO `alojamientos` (ubicacion,habitantes,mCuadrados,precio,imagen) VALUES ('$ubi', '$hab', '$mCuad', '$precio', '$imagen')")
    		or die (mysqli_error($conn));
    		
-   		echo '<script>alert("Vehículo registrado"); window.location.href="anadirElim.php"</script>';
+   		echo '<script>alert("Alojamiento registrado correctamente"); window.location.href="../listaCasas.php"</script>';
 
 ?>

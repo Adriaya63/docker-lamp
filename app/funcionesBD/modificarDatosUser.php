@@ -21,5 +21,5 @@
 		mysqli_query($conn, "UPDATE `usuarios` SET nombre='$nombre', apellido='$apellido', fechancto='$fechancto', tlf='$tlf', dni='$dni', contrasena='$contraseña' WHERE email='$correo'")
    		or die (mysqli_error($conn));
    		
-   		echo '<script>alert("Se han actualizado los datos correctamente"); window.location.href="tusDatos.php"</script>';
+   		echo '<script>alert("Se han actualizado los datos correctamente"); window.location.href="../tusDatos.php"</script>';
 ?>

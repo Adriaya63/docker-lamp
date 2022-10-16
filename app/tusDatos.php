@@ -8,6 +8,7 @@
   <title>Servicio Web</title>
   <link rel="stylesheet" type="text/css" href="css/headerSets.css">
   <link rel="stylesheet" type="text/css" href="css/tusDatosStyle.css">
+  <script type="text/javascript" src="js/confirmacion.js"></script>
   <script type="text/javascript" src="js/comprobarReg.js"></script>
 </head>
 <?php include("templates/header.php")?>
@@ -66,7 +67,8 @@
             
             <br><br>
             </form>
-            <form name="formularioeliminar" action="eliminar.html">
+            <form name="formularioeliminar" onsubmit="return confirmacion()" action="funcionesBD/eliminarUser.php">
+              <h2>Eliminar Usuario</h2>
 
             <div class="botonregistro"> <button class="botonsumbit"  type="submit" value="Eliminar" > Eliminar</button></div>
        

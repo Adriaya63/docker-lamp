@@ -24,14 +24,14 @@
 		
 		$filas=mysqli_num_rows($resultado);
 		if ($filas>0) {
-			echo '<script>alert("Este email ya esta registrado"); window.location.href="registro.php"</script>';
+			echo '<script>alert("Este email ya esta registrado"); window.location.href="../registro.php"</script>';
 		}
 		else {
 		  
 		mysqli_query($conn, "INSERT INTO `usuarios` (nombre,apellido,fechancto,tlf,dni,email,contrasena) VALUES ('$nombre', '$apellido', '$fechancto', '$tlf', '$dni', '$email', '$contrasena')")
 		or die (mysqli_error($conn));
 		
-		echo '<script>alert("Se han registrado los datos correctamente"); window.location.href="index.php"</script>';
+		echo '<script>alert("Se han registrado los datos correctamente"); window.location.href="../index.php"</script>';
 		}
 		
 		
