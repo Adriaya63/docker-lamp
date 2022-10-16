@@ -1,0 +1,40 @@
+h1{
+    text-align: center;
+    text-justify: auto;
+    font-size: 50px;
+}
+
+.info1{
+    padding: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.info1 p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.info2{
+    padding: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.info2 p{
+    font-size: 20px;
+    text-align: center;
+}
+.sub{
+    width: 700px;
+    padding: auto;
+    margin-left: 30%;
+    border: solid;
+    border-radius: 15px;
+}
+.sub h2{
+    font-size: 35px;
+    margin-left: 15%;
+}
+.sub p{
+    font-size: 20px;
+    margin-left: 17%
+}
