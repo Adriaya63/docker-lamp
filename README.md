@@ -6,7 +6,7 @@ El despliege de este repositorio se hara con el uso de la herramienta Docker
 
 ## Participantes
 
-Este trabajo esta hecho por Adrián Ayabarrena Muguruza y Sergio Gonzalez Ramos del GO1 de la asignatura de Sistemas de Gestin de Seguridad de Sistemas de Información
+Este trabajo esta hecho por Adrián Ayabarrena Muguruza y Sergio Gonzalez Ramos del GO1 de la asignatura de Sistemas de Gestion de Seguridad de Sistemas de Información
 
 ## Despliege en Docker
 
