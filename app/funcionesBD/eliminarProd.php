@@ -17,9 +17,22 @@
 
     }
 
-    mysqli_query($conn, "DELETE FROM `alojamientos` WHERE id='$codigo'")
+    $resultado=mysqli_query($conn, "SELECT * FROM `alojamientos` WHERE id='$codigp'")
    		or die (mysqli_error($conn));
-   		
-   		echo '<script>alert("Se han eliminado los datos correctamente"); window.location.href="../listaCasas.php"</script>';
+		
+		$filas=mysqli_num_rows($resultado);
+		if ($filas>0) {
+            mysqli_query($conn, "DELETE FROM `alojamientos` WHERE id='$codigo'")
+            or die (mysqli_error($conn));
+            
+            echo '<script>alert("Se han eliminado los datos correctamente"); window.location.href="../listaCasas.php"</script>';
+		}
+		else {
+		  echo '<script>alert("El codigo ingresado no corresponde a ningun alojamiento"); window.location.href="../anadirElim.php"</script>';;
+		}
+    
+
+
+    
 
 ?>
