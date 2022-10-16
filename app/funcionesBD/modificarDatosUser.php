@@ -1,6 +1,7 @@
 <?php
+    //Iniciar sesion y conectar con bd
 	session_start();
-            	$hostname = "db";
+        $hostname = "db";
 		$username = "admin";
 		$password = "test";
 		$db = "database";
@@ -9,7 +10,8 @@
 		if ($conn->connect_error) {
 			die("Database connection failed: " . $conn->connect_error);
 		}
-		
+
+	//Obtener datos y guardarlos en la bd		
 		$nombre=$_POST['nombre'];
 		$apellido=$_POST['apellido'];
 		$fechancto=$_POST['fechancto'];

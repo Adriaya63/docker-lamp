@@ -33,32 +33,32 @@
     
     font-size: 3vw;
 }
-.tablaautocaravanas{
+.tabla{
     margin: auto;
     border-collapse: collapse;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
-.tablaautocaravanas th{
+.tabla th{
     border: 1px solid #dddddd;
     background-color: #7c7979;
     text-align: center;
     font-size: 2vw;
     padding: 8px
   }
-.tablaautocaravanas td{
+.tabla td{
     border: 1px solid #dddddd;
     text-align: center;
     font-size: 1.25vw;
     padding: 8px;
   }
 
-  .tablaautocaravanas img{
+  .tabla img{
     width: 300px;
     height: 300px;
   }
-   .tablaautocaravanas tr:nth-child(even) {
+   .tabla tr:nth-child(even) {
     background-color: #dddddd;
   }
   .linkcaravana{

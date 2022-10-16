@@ -11,6 +11,7 @@
 <?php include("templates/header.php")?>
 <form class="form-register" action="modProdForm.php"  method="POST">
       <h4>Selecciona el codigo del alojamiento que quieras modificar</h4>
+      <br>
       <input class="control" type="int" name="id" id="id" placeholder="Codigo">
       <input class="boton" type="submit" value="Modificar">
 </form>

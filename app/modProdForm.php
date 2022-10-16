@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Servicio Web</title>
   <link rel="stylesheet" type="text/css" href="css/headerSets.css">
-  <link rel="stylesheet" type="text/css" href="css/modProdStyle.css">
+  <link rel="stylesheet" type="text/css" href="css/modPro.css">
 </head>
 <?php include("templates/header.php")?>
 
 <form id="formularioregistro" class="formularioregistro" action="funcionesBD/modProd.php" method="POST">
-            <div class="tituloregistro"> <h1>Tus Datos</h1> </div>
+            <div class="tituloregistro"> <h1>Datos del Producto</h1> </div>
 
             <table class="tabladatos">
             <tr>

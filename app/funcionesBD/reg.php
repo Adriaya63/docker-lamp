@@ -1,5 +1,6 @@
 <?php
-            	$hostname = "db";
+//Conectar con la bd
+        $hostname = "db";
 		$username = "admin";
 		$password = "test";
 		$db = "database";
@@ -10,7 +11,7 @@
 		}
 
         
-		
+		//Obtner datos
 		$nombre=$_POST['nombre'];
 		$apellido=$_POST['apellido'];
 		$fechancto=$_POST['fechancto'];
@@ -18,7 +19,7 @@
 		$dni=$_POST['dni'];
 		$email=$_POST['email'];
 		$contrasena=$_POST['contrasena'];
-
+		//Buscar si ya existe el email
 		$resultado=mysqli_query($conn, "SELECT * FROM `usuarios` WHERE email='$email'")
    		or die (mysqli_error($conn));
 		
@@ -27,7 +28,7 @@
 			echo '<script>alert("Este email ya esta registrado"); window.location.href="../registro.php"</script>';
 		}
 		else {
-		  
+		  //Guardar datos en la bd
 		mysqli_query($conn, "INSERT INTO `usuarios` (nombre,apellido,fechancto,tlf,dni,email,contrasena) VALUES ('$nombre', '$apellido', '$fechancto', '$tlf', '$dni', '$email', '$contrasena')")
 		or die (mysqli_error($conn));
 		

@@ -1,8 +1,8 @@
-
+<!-- Cabecera principal de toda la pagina-->
 <body>
   <header class>
     <br/>
-    <div class="encabezadotitulo"><h1 class="titulo">Titulo</h1></div>
+    <div class="encabezadotitulo"><h1 class="titulo">Homïes</h1></div>
   </header>
   <div><nav>
     <ul class="barramenu">

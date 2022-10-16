@@ -19,7 +19,7 @@
             <br>
 			<ul>
                 <li>
-                    <table class="tablaautocaravanas">
+                    <table class="tabla">
                     <tr>
                         <th> Codigo</th>
                         <th> Domicilio</th>

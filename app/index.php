@@ -14,7 +14,7 @@
    
   </div>
   
-    <h2 class="textointro"> ¿BUSCAS UN LUGAR DONDE QUEDARTE DE VACACIONES? <br> ¡NO BUSQUE MÁS, AQUÍ TIENE LO QUE NECESITA! </h2>
+    <h2 class="textointro"> ¿BUSCAS UN LUGAR DONDE QUEDARTE DE VACACIONES? <br> ¡NO BUSQUES MÁS, AQUÍ TIENES LO QUE NECESITAS! </h2>
     <br>
     <p class="description"> Disponemos de miles de apartamentos, chalets... de todo tipo donde poder instalarse rápido, eficiente y cómodamente.</p>
  

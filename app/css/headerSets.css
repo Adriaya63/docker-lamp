@@ -88,12 +88,12 @@ header{
 }
 
 .objmenu a:hover:not(.active) {
-    background-color:#dc5b238f ;
+    background-color:#5378c98f ;
 }
 
 .objmenu a.active {
     color: white;
-    background-color: #dc5b238f;
+    background-color: #5378c98f;
 }
 
 .objmenu2{
@@ -106,16 +106,16 @@ header{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    background-color:paleturquoise;
+    background-color:white;
     
 }
 
 .objmenu2 a:hover:not(.active) {
-    background-color:#dc5b238f ;
+    background-color:#5378c98f ;
 }
 
 .objmenu2 a.active {
     color: white;
-    background-color: #dc5b238f;
+    background-color: #5378c98f;
 }
 

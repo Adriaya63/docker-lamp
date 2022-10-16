@@ -1,4 +1,5 @@
 <?php
+    //Iniciar sesion y conectar con bd
     session_start();
     $hostname = "db";
     $username = "admin";
@@ -9,7 +10,7 @@
     if ($conn->connect_error) {
         die("Database connection failed: " . $conn->connect_error);
     } 
-
+    //Coger email de sesion y eliminarlo de la bd
     $email=$_SESSION['email'];
 
     mysqli_query($conn, "DELETE FROM `usuarios` WHERE email='$email'")

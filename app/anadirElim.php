@@ -27,7 +27,6 @@
                     <input class="boton" type="submit" value="Añadir">
                 </form>
             </div>
-            <img src="https://media.tenor.com/3WocBJh0dpIAAAAd/yo-cuando-me-dicen-que-no-hay-clase-monkey.gif" alt="mono bailando">
             <div class="contenedor2">
             <h4 class="titulocont">Eliminar Alojamiento</h4>
             <p>Introduzca el codigo del alojamiento y pulse "Eliminar"</p>
